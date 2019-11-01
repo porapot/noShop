@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
-
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400,
+    autoplay:true
+  };
+  slideCard = {
+    initialSlide: 1,
+    speed: 400,
+    autoplay:true
+  };
 }

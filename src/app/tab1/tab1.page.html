@@ -1,41 +1,191 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+    <ion-searchbar class="sarch" mode="ios"></ion-searchbar>
+    <ion-buttons slot="end" class="chat">
+      <ion-button>
+        <ion-icon slot="icon-only" src="assets/icon/chat.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1pKxyleT2gK0jSZFvXXXnFXXa.jpg_1200x1200Q100.jpg_.webp">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1DVJAloT1gK0jSZFhXXaAtVXa.jpg_1200x1200Q100.jpg_.webp">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1RjFDlkT2gK0jSZFkXXcIQFXa.jpg_1200x1200Q100.jpg_.webp">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titlecard">ภารกิจพิเศษ</ion-card-title>
+    </ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-row class="iconinvite">
+            <img src="assets/s.svg">
+          </ion-row>
+          <ion-row>
+            เชิญเพื่อนรับ coins
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-row class="iconlaba">
+            <img src="assets/laba.svg">
+          </ion-row>
+          <ion-row class="text1">
+            ผูกบัญชี
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-row class="iconshare">
+            <img src="assets/share.svg">
+          </ion-row>
+          <ion-row class="text2">
+            แชร์รับ coins
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+  <ion-card class="card1">
+    <ion-card-header>
+      <ion-card-title class="titlecard" style="text-align: center;"> Free Sihpping Or Discount</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-row class="iconinvite">
+              <img src="assets/free.svg">
+            </ion-row>
+            <ion-row>
+              Shipping Free
+            </ion-row>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row class="iconlaba">
+              <img src="assets/discount.png">
+            </ion-row>
+            <ion-row class="text1">
+              Discount
+            </ion-row>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row class="iconshare">
+              <img src="assets/campaign.svg">
+            </ion-row>
+            <ion-row class="text2">
+              campaing
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titlecard" style="text-align: center;"> Hot Sale Top10 ประจำสัปดาห์</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-slides pager="true" [options]="slideCard">
+        <ion-slide>
+          <ion-card class="cardtop10">
+            <div class="imgtop10">
+              <img src="assets/xs.png">
+            </div>
+            <ion-card-header>
+              <ion-card-title>iPhoneXS 64GB </ion-card-title>
+              <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <ion-card class="cardtop10">
+              <div class="imgtop10">
+                <img src="assets/xs.png">
+              </div>
+              <ion-card-header>
+                <ion-card-title>iPhoneXS 64GB </ion-card-title>
+                <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+        </ion-slide>
+        <ion-slide>
+            <ion-card class="cardtop10">
+              <div class="imgtop10">
+                <img src="assets/xs.png">
+              </div>
+              <ion-card-header>
+                <ion-card-title>iPhoneXS 64GB </ion-card-title>
+                <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+            <ion-card class="cardtop10">
+                <div class="imgtop10">
+                  <img src="assets/xs.png">
+                </div>
+                <ion-card-header>
+                  <ion-card-title>iPhoneXS 64GB </ion-card-title>
+                  <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+          </ion-slide>
+          <ion-slide>
+              <ion-card class="cardtop10">
+                <div class="imgtop10">
+                  <img src="assets/xs.png">
+                </div>
+                <ion-card-header>
+                  <ion-card-title>iPhoneXS 64GB </ion-card-title>
+                  <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+                </ion-card-header>
+              </ion-card>
+              <ion-card class="cardtop10">
+                  <div class="imgtop10">
+                    <img src="assets/xs.png">
+                  </div>
+                  <ion-card-header>
+                    <ion-card-title>iPhoneXS 64GB </ion-card-title>
+                    <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+                  </ion-card-header>
+                </ion-card>
+            </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-title class="titlecard" style="text-align: center;">สินค้าแนะนำ</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+          <ion-card class="cardtop10">
+              <div class="imgtop10">
+                <img src="assets/xs.png">
+              </div>
+              <ion-card-header>
+                <h1>iPhoneXS 64GB</h1>
+                <ion-card-subtitle>ราคา 22,900</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+
 </ion-content>
